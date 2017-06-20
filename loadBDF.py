@@ -44,31 +44,3 @@ raw.save('sample_audvis_meg_raw.fif', tmin=0, tmax=150, picks=picks, overwrite=T
 #mne.set_config('MNE_STIM_CHANNEL', 'STI101', set_env=True) # Para cambiar el STIM channel
 #events = mne.find_events(raw, stim_channel='STI 014')
 #print(events[:5])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
