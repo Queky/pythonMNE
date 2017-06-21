@@ -9,6 +9,7 @@ Created on Sat Jun 17 16:06:38 2017
 
 import mne
 import numpy as np
+import matplotlib.pyplot as plt
 
 raw = mne.io.read_raw_edf("Part_1_N_Trial1_emotion.bdf", stim_channel=None, preload=True) # Se lee el archivo bdf mediante mne
 
@@ -34,10 +35,11 @@ data, times = raw[:, start:stop]
 print(data.shape)
 print(times.shape)
 data, times = raw[2:20:3, start:stop]  # access underlying data
-#raw.plot()
+raw.plot()
+plt.show()
 #Save a segment of 150s of raw data (MEG only):
-picks = mne.pick_types(raw.info, meg=True, eeg=False, stim=True, exclude='bads')
-raw.save('sample_audvis_meg_raw.fif', tmin=0, tmax=150, picks=picks, overwrite=True)
+#picks = mne.pick_types(raw.info, meg=True, eeg=False, stim=True, exclude='bads')
+#raw.save('sample_audvis_meg_raw.fif', tmin=0, tmax=150, picks=picks, overwrite=True)
 
 
 # 2.- Lectura y definicion de epochs

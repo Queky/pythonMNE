@@ -1,1 +1,0 @@
-START cmd /K "activate py27 & python LoadBDF.py"
