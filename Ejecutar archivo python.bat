@@ -1,1 +1,1 @@
-START cmd /K "activate py27 & python LoadBDF.py"
+START  cmd "%windir%\system32\cmd.exe " /K " C:\Users\inaki\Anaconda3\Scripts\activate.bat C:\Users\inaki\Anaconda3 & activate py27 & python loadBDF.py"
