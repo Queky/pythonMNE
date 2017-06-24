@@ -1,1 +1,1 @@
-START  cmd "%windir%\system32\cmd.exe " /K " C:\Users\inaki\Anaconda3\Scripts\activate.bat C:\Users\inaki\Anaconda3 & activate py27 & python loadBDF.py"
+START  cmd "%windir%\system32\cmd.exe " /K " C:\Users\inaki\Anaconda3\Scripts\activate.bat C:\Users\inaki\Anaconda3 & activate py27 & python LoadFiles.py"
